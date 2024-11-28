@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Setores</title>
+    <link rel="stylesheet" href="gerenciar_setores.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciar Setores</h1>
+
+        <!-- Formulário para adicionar setores -->
+        <div class="form-setor spaced">
+            <label for="descricao">Descrição do Setor:</label>
+            <input type="text" id="descricao" name="descricao">
+            <button id="salvar">Salvar</button>
+        </div>
+
+        <!-- Lista de setores -->
+        <h2>Lista de Setores</h2>
+        <table id="setoresTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descrição</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Setores carregados dinamicamente aqui -->
+            </tbody>
+        </table>
+
+        <!-- Botão para voltar ao menu -->
+        <a href="menu.html" class="back-button">Voltar ao Menu Principal</a>
+    </div>
+
+    <script src="gerenciar_setores.js"></script>
+</body>
+</html>

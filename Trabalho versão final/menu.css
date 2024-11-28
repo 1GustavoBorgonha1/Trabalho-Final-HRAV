@@ -1,0 +1,55 @@
+/* Configuração da imagem de fundo */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hospitalfoto.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5; /* Suaviza a imagem */
+}
+
+/* Contêiner principal do menu */
+.menu-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Para garantir que fique acima do fundo */
+}
+
+/* Título do menu */
+.menu-container h1 {
+    color: #b71c1c;
+    margin-bottom: 30px;
+}
+
+/* Contêiner de botões */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo dos botões */
+.menu-button {
+    display: block;
+    padding: 12px;
+    background-color: #b71c1c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #8e0000;
+}

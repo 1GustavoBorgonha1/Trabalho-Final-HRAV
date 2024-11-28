@@ -1,0 +1,59 @@
+/* Estilo do contêiner de login */
+.login-container {
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 100px auto;
+}
+
+/* Logo dentro do contêiner de login, com tamanho reduzido */
+.logo img {
+    width: 80px; /* Reduz o tamanho do logo para ficar mais agradável */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Estilos para o título */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #b71c1c;
+}
+
+/* Estilos dos campos de entrada */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos do botão de login */
+.login-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #b71c1c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-submit:hover {
+    background-color: #8e0000;
+}

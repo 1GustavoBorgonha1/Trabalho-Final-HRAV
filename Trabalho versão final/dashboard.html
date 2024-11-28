@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Simplificado</title>
+    <link rel="stylesheet" href="dashboard_simplificado.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Dashboard de Respostas</h1>
+
+        <!-- Métricas principais -->
+        <div class="metrics">
+            <div class="metric" id="averageScore">Média das Notas: <span>--</span></div>
+            <div class="metric" id="totalResponses">Total de Respostas: <span>--</span></div>
+            <div class="metric" id="feedbackCount">Total de Feedbacks: <span>--</span></div>
+        </div>
+
+        <!-- Gráfico de Distribuição de Notas -->
+        <div class="chart-container">
+            <h2>Distribuição de Notas</h2>
+            <canvas id="scoreDistributionChart"></canvas>
+        </div>
+
+        <!-- Botão de Atualizar -->
+        <div class="actions">
+            <button id="updateButton">Atualizar Dados</button>
+            <a href="menu.html" class="back-button">Voltar ao Menu</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard_simplificado.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbecec;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo de Container */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #a94442;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Formulário */
+.form-pergunta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-pergunta label {
+    font-weight: bold;
+    color: #a94442;
+}
+
+.form-pergunta input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.form-pergunta button {
+    padding: 8px 16px;
+    background-color: #a94442;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-pergunta button:hover {
+    background-color: #8b3131;
+}
+
+/* Tabela de Perguntas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+td .action-buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.action-buttons button {
+    padding: 5px 10px;
+    background-color: #a94442;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.action-buttons button:hover {
+    background-color: #8b3131;
+}
+
+/* Botão Voltar ao Menu */
+.back-button {
+    padding: 10px 20px;
+    background-color: #a94442;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+.back-button:hover {
+    background-color: #8b3131;
+}
+
+/* Estilo de Espaçamento */
+.container .spaced {
+    margin-bottom: 20px;
+}
+
+/* Botões de ação */
+.action-button {
+    padding: 8px 16px;
+    background-color: #a94442;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.action-button:hover {
+    background-color: #8b3131;
+    opacity: 0.9;
+}
+
+.action-button:disabled {
+    background-color: #ddd;
+    color: #888;
+    cursor: not-allowed;
+}

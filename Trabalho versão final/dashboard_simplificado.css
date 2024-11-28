@@ -1,0 +1,125 @@
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbecec; /* Tom claro de vermelho */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.dashboard-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    color: #a94442; /* Vermelho escuro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Métricas */
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.metric {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 15px;
+    background-color: #f2dede; /* Fundo claro de vermelho */
+    color: #a94442; /* Texto vermelho escuro */
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Gráficos */
+.chart-container {
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.chart-container canvas {
+    max-width: 100%;
+}
+
+/* Botões */
+button, .back-button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #a94442;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    border: none; /* Remove a borda padrão */
+    box-shadow: none; /* Remove a sombra */
+}
+
+button:hover, .back-button:hover {
+    background-color: #8b3131;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .metrics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metric {
+        margin-bottom: 10px;
+        max-width: 90%;
+    }
+
+    .chart-container {
+        padding: 0 10px;
+    }
+
+    button, .back-button {
+        width: auto;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .metrics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metric {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .chart-container {
+        padding: 0 5px;
+    }
+
+    button, .back-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
