@@ -1,0 +1,33 @@
+*{
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+    padding: 5px;
+}
+
+#cad1{
+    background-color: lightblue;
+    border: black;
+}
+#cad2{
+    background-color: lightgreen;
+}
+#cad3{
+    background-color: lightpink;
+}
+fieldset{
+    background-color: lightgray;
+}
+
+legend{
+    font-size: 21px;
+}
+.tsexo{
+    font-style: italic;
+}

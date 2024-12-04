@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login para Administradores</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Contêiner principal do formulário de login com o logo -->
+    <div class="login-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logo hs.png" alt="Logo Hospital Regional Alto Vale">
+        </div>
+        
+        <h2>Login para Administradores</h2>
+        
+        <!-- Formulário de login -->
+        <form action="autenticar.php" method="post">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="login-submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Inclui o arquivo JavaScript externo -->
+    <script src="login.js"></script>
+</body>
+</html>

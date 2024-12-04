@@ -1,0 +1,72 @@
+/* *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div{
+    border-style: groove;
+} */
+
+/* Folha de estilos utilizada para Prática 3 da aula de revisão de CSS 
+   Exercício: Atualizar a página de biografia do aluno (realizada na revisão de HTML)
+   estilizando com CSS  
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+#bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#obj {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+#form {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#cur {
+    display: flex;
+    flex-direction: column;
+}
+#cur {
+    margin: 0;
+    font-size: 24px;
+}
+#exp {
+    margin: 5px 0 0;
+    color: #555;
+}
+#vid {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.profile-content h2 {
+    margin-top: 0;
+}
+.profile-content .details {
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-content .details .item {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Pergunta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Logo do Hospital -->
+        <div class="logo-container">
+            <img src="logo hs.png" alt="Logo Hospital Regional Alto Vale">
+        </div>
+
+        <!-- Título da página -->
+        <h1>Avaliação dos Serviços do Hospital</h1>
+        
+        <!-- Contêiner da pergunta -->
+        <div id="pergunta-container">
+            <p id="pergunta">Carregando pergunta...</p>
+        </div>
+
+        <!-- Sessão de nota -->
+        <div class="nota-section">
+            <p>Nota (0 a 10):</p>
+            <div class="rating">
+                <div class="rating-labels">
+                    <span>Improvável</span>
+                    <span>Muito Provável</span>
+                </div>
+                <div class="rating-scale">
+                    <!-- Notas de 0 a 10 -->
+                    <input type="radio" id="nota0" name="nota" value="0">
+                    <label for="nota0">0</label>
+                    <input type="radio" id="nota1" name="nota" value="1">
+                    <label for="nota1">1</label>
+                    <input type="radio" id="nota2" name="nota" value="2">
+                    <label for="nota2">2</label>
+                    <input type="radio" id="nota3" name="nota" value="3">
+                    <label for="nota3">3</label>
+                    <input type="radio" id="nota4" name="nota" value="4">
+                    <label for="nota4">4</label>
+                    <input type="radio" id="nota5" name="nota" value="5">
+                    <label for="nota5">5</label>
+                    <input type="radio" id="nota6" name="nota" value="6">
+                    <label for="nota6">6</label>
+                    <input type="radio" id="nota7" name="nota" value="7">
+                    <label for="nota7">7</label>
+                    <input type="radio" id="nota8" name="nota" value="8">
+                    <label for="nota8">8</label>
+                    <input type="radio" id="nota9" name="nota" value="9">
+                    <label for="nota9">9</label>
+                    <input type="radio" id="nota10" name="nota" value="10">
+                    <label for="nota10">10</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sessão de feedback -->
+        <div class="feedback-section">
+            <label for="feedback">Feedback Adicional:</label>
+            <textarea id="feedback" rows="4" placeholder="Escreva seu feedback aqui"></textarea>
+        </div>
+
+        <!-- Botão de envio -->
+        <button id="enviarResposta">Enviar e Próxima</button>
+
+        <!-- Mensagem de aviso -->
+        <p class="mensagem-anonima">
+            “Sua avaliação espontânea é anônima, nenhuma informação pessoal é solicitada ou armazenada.”
+        </p>
+
+        <!-- Contador de tempo -->
+        <p id="timer">Você será redirecionado para a primeira pergunta em 30 segundos caso não responda algo.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>
